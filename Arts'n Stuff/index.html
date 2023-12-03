@@ -6,16 +6,76 @@
   <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
   <link rel="stylesheet" href="index.css">
+  <script src="index.js" defer></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> 
   <title>Magic</title>
 </head>
 <body>
   <header class="header">
+    <div class="header__blackout"></div>
     <div class="header__nav">
       <img class="logo header__logo" src="./Images/logo.png" alt="site logo">
       <div class="shop-dropdown">Shop<span class="down-arrow">⌄</span></div>
       <p><a href="#">About</a></p>
       <div class="more-dropdown">More<span class="down-arrow">⌄</span></div>
+
+      <div id="header__shop" class="header__dropdown__container">
+        <hr>
+          <div class="header__list__container">
+            <div class="header__list">
+              <h2>Sort by season</h2>
+              <ul>
+                <li>Spring</li>
+                <li>Summer</li>
+                <li>Autumn</li>
+                <li>Winter</li>
+              </ul>
+            </div>
+            <div class="header__list">
+              <h2>Sort by feeling</h2>
+              <ul>
+                <li>Happiness</li>
+                <li>Sadness</li>
+                <li>Anger</li>
+                <li>Euphoria</li>
+              </ul>
+            </div>
+            <div class="header__list">
+              <h2>Sort by style</h2>
+              <ul>
+                <li>Colorful</li>
+                <li>Black&White</li>
+                <li>Abstract</li>
+                <li>Nature</li>
+              </ul>
+            </div>
+            <div></div> 
+          </div>
+      </div>
+      <div id="header__more" class="header__dropdown__container">
+        <hr>
+        <div class="header__list__container">
+          <div class="header__list">
+            <h2>More</h2>
+            <ul>
+              <li>Careers</li>
+              <li>Account</li>
+              <li>Gift Cards</li>
+            </ul>
+          </div>
+          <div class="header__list">
+            <h2>Help</h2>
+            <ul>
+              <li>FAQ</li>
+              <li>Shipping &amp; Returns</li>
+              <li>Gift Cards</li>
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
+
     <div class="header__center">
         <div class="header__text">
           <h1>Arts'n Stuff</h1>
