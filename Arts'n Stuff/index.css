@@ -273,6 +273,11 @@ body{
   width: 100%;
   height: 90vh;
 
+
+  & .card__text{
+    position: absolute;
+  }
+
   & h1{
     font-size: 2.8rem;
   }
@@ -280,42 +285,84 @@ body{
   & p{
     font-size: 1.4rem;
   }
+
+  @media (max-width: 730px){
+    & h1{
+      font-size: 2rem;
+      width:60%;
+    }
+    & p{
+      font-size: 1.2rem;
+      width:50%;
+    }
+  }
+
+  .card__secondary{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  & img{
+    position: absolute;
+    width: 20rem;
+    height: 30rem;
+    bottom: 4rem;
+    border-radius: 0.4rem;
+  }
+  & img.card--left{
+    right: 6rem;
+  }
+  & img.card--right{
+    left: 6rem;
+  }
 }
 
 .inspire{
   background-color: rgb(255, 212, 111);
 
   .card__text{
-    position: absolute;
-    top: 15vh;
+    top: 10vh;
     left: 2rem;
     width: 30rem;
+  }
+
+  .card__secondary{
+    background-color: rgb(255, 146, 57);
+    clip-path: polygon(70% 0, 100% 0, 100% 100%, 0 100%);
   }
 }
 
 .style{
-  background-color: aqua;
+  background-color: rgb(41, 254, 254);
 
   .card__text{
-    position: absolute;
-    top: 15vh;
+    top: 10vh;
     right: 2rem;
     width: 30rem;
     text-align: end;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+  }
+  .card__secondary{
+    background-color: rgb(98, 137, 255);
+    clip-path: polygon(0 0, 30% 0, 100% 100%, 0 100%);
   }
 }
 
 .build{
-  background-color: rgb(255, 123, 61);
+  background-color: rgb(255, 169, 94);
 
   .card__text{
-    position: absolute;
-    bottom: 15vh;
+    top: 10vh;
     left: 2rem;
     width: 30rem;
   }
-
-  & h1{
-    line-height: 2.6rem;
+  .card__secondary{
+    background-color: rgb(255, 113, 61);
+    clip-path: polygon(70% 0, 100% 0, 100% 100%, 0 100%);
   }
 }
