@@ -16,4 +16,4 @@ $('.more-dropdown').on('pointerenter', () => {
   $('.header__blackout').css('display', 'block');
   $('#header__shop').css('display', 'none');
   $('#header__more').css('display', 'block');
-})
+});
